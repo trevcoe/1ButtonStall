@@ -4,7 +4,7 @@ This program makes it easier to set up 1 button stall for controller players on 
 # IMPORTANT!
 
 Step 1.
-Place the bat file and .py file in your users folder. For me, that would be: C:\Users\trevy
+Place the bat file and .py file in your users folder, and drag bat. For me, that would be: C:\Users\trevy
 
 Step 2.
 Open the py file in any text editor (notepad is fine) and continue with the instructions from there.
