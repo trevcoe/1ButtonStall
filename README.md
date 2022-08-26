@@ -2,6 +2,7 @@
 This program makes it easier to set up 1 button stall for controller players on epic games / PC. 
 
 # IMPORTANT!
+Click "Code" and download zip.
 
 Step 1.
 Place the bat file and .py file in your users folder. For me, that would be: C:\Users\trevy.
