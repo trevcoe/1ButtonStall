@@ -1,6 +1,5 @@
-# Step 1. Add your user. Go to your files and click "This PC" "Local Disk: C" then "Users" then replace trevy with your user. Leave the quotes. Caps matter.
-
-user = "trevy"
+# Step 1. Add your user. Go to your files and click "This PC" "Local Disk: C" then "Users" then replace trevy with your user. Leave the quotes and the backslashs. Caps matter.
+user = "\\trevy"
 
 # Step 2. Keybinds.
 # The button you want to stall with. Leave the quotes. Caps Matter.
@@ -12,11 +11,14 @@ airRoll = "RollRight"
 # If you chose RollRight, type YawLeft. If you chose RollLeft, type YawRight. Leave the quotes. Caps matter.
 yaw = "YawLeft"
 
+
+
+
 # Don't touch anything below this line.
-with open(r'C:\Users\ '+ user +r'\Documents\My Games\Rocket League\TAGame\Config\TAInput.ini', "r") as in_file:
+with open(r'C:\Users'+ user +r'\Documents\My Games\Rocket League\TAGame\Config\TAInput.ini', "r") as in_file:
     buf = in_file.readlines()
 
-with open(r'C:\Users\ '+ user +r'\Documents\My Games\Rocket League\TAGame\Config\TAInput.ini', "w") as out_file:
+with open(r'C:\Users'+ user +r'\Documents\My Games\Rocket League\TAGame\Config\TAInput.ini', "w") as out_file:
     stall = 'GamepadBindings=( Action="' + yaw + '",Key="XboxTypeS_' + key + '", bRequired=true )AxisSign=AxisSign_Negative, )\nGamepadBindings=( Action="'+ airRoll + '",Key="XboxTypeS_'+ key +'", bRequired=true )\nGamepadBindings=( Action="Jump",Key="XboxTypeS_' + key + '", bRequired=true )\n'
     for line in buf:
         if line == 'GamepadBindings=( Action="EditorRedo",				Key="XboxTypeS_DPad_Right" )\n':
